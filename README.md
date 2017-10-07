@@ -1,7 +1,7 @@
 
 # Flux
  
-
+  Flux is an architectural pattern based on unidirectional data flow.
  
 #### Core Concepts
   
