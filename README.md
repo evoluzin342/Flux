@@ -14,25 +14,23 @@
 ## Building an Application with Flux
 
 ```bash
-# Install the ngrx
+ # clone the repo
+  git clone 
 
-   npm install ngrx --save
- 
+# cd into project of your choice
+cd counter
 
-# Install the angular cli to cretae the angular projects:
+# install dependencies
+npm install
 
-   npm install -g @angular/cli
-   
- # Create the project.
-  
-    ng new "Your project name"
+# start the server
+npm start
     
 ```
-
- And Follow the [Building an Application with Ngrx](https://www.toptal.com/angular-js/ngrx-angular-reaction-application)
+ 
 
 # Reference
-[Building an Application with Flux](https://www.toptal.com/angular-js/ngrx-angular-reaction-application)
+[Building an Application with Flux]()
  
 
 
