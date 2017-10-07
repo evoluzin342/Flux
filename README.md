@@ -32,6 +32,7 @@ npm start
 # Reference
 
 [What is Flux](http://fluxxor.com/what-is-flux.html)
+
 [Flux pattern](https://softwareengineering.stackexchange.com/questions/295119/understanding-flux-pattern)
  
 
