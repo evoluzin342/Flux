@@ -100,7 +100,7 @@ through the system.
 3. Stores send data to the views.
   - _(Different phrasing: Views get data from the stores.)_
 
-![Data flow within Flux application](./flux-simple-f8-diagram-with-client-action-1300w.png)
+![Data flow within Flux application](./counter/flux-simple-f8-diagram-with-client-action-1300w.png)
 
 _(There is also another node in the diagram accounting for actions that do not
 originate from views, which is common)_
