@@ -15,7 +15,7 @@
 
 ```bash
  # clone the repo
-  git clone 
+  git clone  https://github.com/evoluzin342/Flux.git
 
 # cd into project of your choice
 cd counter
