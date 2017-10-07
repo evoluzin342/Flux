@@ -16,12 +16,7 @@ The dispatcher receives actions and dispatches them to stores that have
 registered with the dispatcher. **Every store will receive every action.**
 There should be only one singleton dispatcher in each application.
 
-Example:
 
-1. User types in title for a todo and hits enter.
-2. The view captures this event and **dispatches** an "add-todo" action
-   containing the title of the todo.
-3. **Every store** will then receive this action.
 
 ## Store
 
@@ -33,12 +28,7 @@ what actions they want to respond to. **Every time a store's data changes it
 must emit a "change" event.** There should be many stores in each
 application.
 
-Examples:
 
-1. Store receives an "add-todo" action.
-2. It decides it is relevant and adds the todo to the list of things
-   that need to be done today.
-3. The store updates its data and then emits a "change" event.
 
 ## Actions
 
@@ -46,25 +36,7 @@ Actions define the internal API of your application. They capture the ways
 in which anything might interact with your application. They are simple
 objects that have a "type" field and some data.
 
-Actions should be semantic and descriptive of the action taking place.
-They should not describe implementation details of that action. Use
-"delete-user" rather than breaking it up into "delete-user-id",
-"clear-user-data", "refresh-credentials" (or however the process works).
-Remember that all stores will receive the action and can know they need
-to clear the data or refresh credentials by handling the same "delete-user"
-action.
-
-Examples:
-
-1. When a user clicks "delete" on a completed todo a single "delete-todo"
-   action is dispatched:
-
-```
-  {
-    type: 'delete-todo',
-    todoID: '1234',
-  }
-```
+ 
 
 ## Views
 
@@ -76,19 +48,9 @@ If a component ever uses a store and does not subscribe to it then there
 is likely a subtle bug waiting to be found. Actions are typically dispatched
 from views as the user interacts with parts of the application's interface.
 
-Example:
 
-1. The main view subscribes to the TodoStore.
-2. It accesses a list of the Todos and renders them in a readable format for
-   the user to interact with.
-3. When a user types in the title of a new Todo and hits enter the view tells 
-   the Dispatcher to dispatch an action.
-4. All stores receive the dispatched action.
-5. The TodoStore handles the action and adds another Todo to its internal
-   data structure, then emits a "change" event.
-6. The main view is listening for the "change" event. It gets the event,
-   gets new data from the TodoStore, and then re-renders the list of Todos
-   in the user interface.
+
+
    
 ## Flow of data
 
