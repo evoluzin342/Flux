@@ -3,8 +3,16 @@
  
   Flux is an architectural pattern based on unidirectional data flow.
  
-#### Core Concepts
+# Core Concepts
   
+- [Store]- manage business data and state
+
+- [View] - a hierarchical composition of React components
+
+- [Actions] -events created from user events that triggered on the View
+ 
+- [Dispatcher] - an event bus for all actions
+
  
  
 ## Why Use Flux? 
